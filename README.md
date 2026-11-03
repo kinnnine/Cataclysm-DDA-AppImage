@@ -2,9 +2,9 @@
 
 # Cataclysm-DDA-AppImage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/TEMPLATE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![CI Build Status](https://github.com/pkgforge-dev/TEMPLATE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/TEMPLATE-AppImage)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/kinnnine/Cataclysm-DDA-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/kinnnine/Cataclysm-DDA-AppImage/releases/latest)
+[![CI Build Status](https://github.com/kinnnine/Cataclysm-DDA-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/kinnnine/Cataclysm-DDA-AppImage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/kinnnine/Cataclysm-DDA-AppImage)](https://github.com/kinnnine/Cataclysm-DDA-AppImage/releases/latest)
 
 <p align="center">
   <img src="https://github.com/pkgforge-dev.png" width="128" />
