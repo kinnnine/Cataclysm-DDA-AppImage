@@ -12,7 +12,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano sdl2_image-mini
 
-echp "Building Cataclysm-DDA..."
+echo "Building Cataclysm-DDA..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/CleverRaven/Cataclysm-DDA"
 VERSION="0.H-RELEASE"
