@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/kinnnine/Cataclysm-DDA-AppImage)](https://github.com/kinnnine/Cataclysm-DDA-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/refs/heads/master/data/xdg/org.cataclysmdda.CataclysmDDA.svg" width="128" />
 </p>
 
 
