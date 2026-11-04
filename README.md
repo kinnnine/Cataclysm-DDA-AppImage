@@ -32,11 +32,11 @@ User's config folder is located at `$HOME/.config/cataclysm-dda`, there's should
 The main difference is the game executable and its data are packed into AppImage instead of binary tarball, even so the game is freshly compiled inside this GitHub action, this is not a repacked of an official binary tarball. 
 
 ### How can I run this on NixOS?
-Every AppImages built with sharun are using DwarFS instead of SquashFS, including this one.<br>
-When you execute this AppImage by either running though `appimage-run` or just directly execute the file, it will always run though `appimage-run` unless binfmt is disabled in your NixOS configuration.<br>
+Every AppImages built with `quick-sharun` are using DwarFS instead of SquashFS, including this one.<br>
+When you execute this AppImage by either running though `appimage-run` or just directly execute the file, it will always go though `appimage-run` unless binfmt is disabled in your NixOS configuration.<br>
 The problem with `appimage-run` is this wrapper is expecting only SquashFS, DwarFS is completely unsupported by `appimage-run`.
 
-In order to run this AppImage and every AppImage built with sharun, you must disable binfmt in your `configuration.nix` or where your `programs.appimage` is defined.
+In order to run this AppImage and every AppImage built with `quick-sharun`, you must disable binfmt in your `configuration.nix` or where your `programs.appimage` is defined.
 
 ```
 programs.appimage = {
