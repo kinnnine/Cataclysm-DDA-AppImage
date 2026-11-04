@@ -13,7 +13,7 @@
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/kinnnine/Cataclysm-DDA-AppImage/releases/latest) | [Click here](https://github.com/CleverRaven/Cataclysm-DDA/tree/0.H-RELEASE) |
+| [Click here](https://github.com/kinnnine/Cataclysm-DDA-AppImage/releases/latest) | [Click here](https://github.com/CleverRaven/Cataclysm-DDA/tree/0.I) |
 
 </div>
 
