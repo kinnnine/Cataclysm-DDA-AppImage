@@ -16,14 +16,12 @@ get-debloated-pkgs --add-common --prefer-nano sdl2_image-mini
 echo "Building Cataclysm-DDA..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/CleverRaven/Cataclysm-DDA"
-VERSION="0.H-RELEASE"
+VERSION="0.I"
 git clone --depth 1 --branch "$VERSION" "$REPO" ./Cataclysm-DDA
 echo "$VERSION" > ~/version
 
 cd ./Cataclysm-DDA
 
-# https://github.com/CleverRaven/Cataclysm-DDA/commit/1400b1018ff37196bd24ba4365bd50beb571ac14
-sed -i 's/const size_type count_;/size_type count_;/g' src/third-party/flatbuffers/stl_emulation.h
 # There is src/prefix.h.in but I have no idea why src/prefix.h won't generated...
 echo '#define PREFIX "/usr"' > src/prefix.h 
 
