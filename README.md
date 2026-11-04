@@ -17,6 +17,36 @@
 
 </div>
 
+## FAQ
+
+### Where to install extra soundpacks, tilesets or mods?
+User's data folder is located at `$HOME/.local/share/cataclysm-dda`, install it there.<br>
+In that folder should contains `sound`, `gfx` and `mods`, tileset must be in `gfx` and the rest are self-explanatory.
+
+Inside user's data folder also containing your saves files. 
+
+### Where is the game configuration file?
+User's config folder is located at `$HOME/.config/cataclysm-dda`, there's should be `config.json` inside the folder after running the game for the first time.
+
+### How is this different from an official distribution?
+The main difference is the game executable and its data are packed into AppImage instead of binary tarball, even so the game is freshly compiled inside this GitHub action, this is not a repacked of an official binary tarball. 
+
+### How can I run this on NixOS?
+Every AppImages built with sharun are using DwarFS instead of SquashFS, including this one.<br>
+When you execute this AppImage by either running though `appimage-run` or just directly execute the file, it will always run though `appimage-run` unless binfmt is disabled in your NixOS configuration.<br>
+The problem with `appimage-run` is this wrapper is expecting only SquashFS, DwarFS is completely unsupported by `appimage-run`.
+
+In order to run this AppImage and every AppImage built with sharun, you must disable binfmt in your `configuration.nix` or where your `programs.appimage` is defined.
+
+```
+programs.appimage = {
+    enable = true;
+    binfmt = false;
+};
+```
+
+Reference: [https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/FAQ.md#i-get-error-cant-find-a-valid-squashfs-superblock-in-nixos](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/FAQ.md#i-get-error-cant-find-a-valid-squashfs-superblock-in-nixos)
+
 ---
 
 AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
