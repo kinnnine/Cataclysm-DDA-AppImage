@@ -28,7 +28,7 @@ case VERSION in
     # https://github.com/CleverRaven/Cataclysm-DDA/commit/1400b1018ff37196bd24ba4365bd50beb571ac14
     sed -i 's/const size_type count_;/size_type count_;/g' src/third-party/flatbuffers/stl_emulation.h
     ;;
-  "0.I")
+  "0.I"|"0.I-1")
     # Disable WARN_ON_MODIFIED by default, preventing debug screen about stale game data on every launch.
     sed -i '2891 s/true/false/' src/options.cpp
     ;;
