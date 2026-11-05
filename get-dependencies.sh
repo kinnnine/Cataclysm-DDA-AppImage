@@ -22,6 +22,8 @@ echo "$VERSION" > ~/version
 
 cd ./Cataclysm-DDA
 
+# Disable WARN_ON_MODIFIED by default, preventing debug screen about stale game data on every launch.
+sed -i '2891 s/true/false/' src/options.cpp
 # There is src/prefix.h.in but I have no idea why src/prefix.h won't generated...
 echo '#define PREFIX "/usr"' > src/prefix.h 
 
